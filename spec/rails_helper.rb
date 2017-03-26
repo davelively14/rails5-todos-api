@@ -13,7 +13,7 @@ ActiveRecord::Migration.maintain_test_schema!
 # configure shoulda matchers to use rspec as the test framework and full matcher
 # libraries for rails
 Shoulda::Matchers.configure do |config|
-  config.iterate do |with|
+  config.integrate do |with|
     with.test_framework :rspec
     with.library :rails
   end
