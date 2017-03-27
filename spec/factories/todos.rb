@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :todo do
-    sequence(:title){|n| Faker::Book.title}
-    sequence(:created_by){|n| Faker::Internet.user_name}
+    title{Faker::Book.title}
+    created_by {Faker::Number.number(10)}
   end
 end
